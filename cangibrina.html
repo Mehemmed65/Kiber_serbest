@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Başlık</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">
+          <img class="sekil"  src="logo.png" alt="Logo" >
+        </div>
+        <ul>
+          <li><a href="https://www.aztu.edu.az/az" target="_blank">Ana Səhifə</a></li>
+          <li><a href="#">Xəbərlər</a></li>
+          <li><a href="index.html">Tools</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+
+
+
+
+    <header>
+      <h1>Cangibrina</h1>
+    </header>
+    <main>
+      <article>
+        <h2>Cangibrina nədir və istifade üçün nə toolar lazımdı?</h2>
+        <p>İdarə Paneli Axtarışı</p>
+
+         <p> Cangibrina, wordlist, google, nmap və robots.txt üzərindən brute-force istifadə edərək saytların <u>idairəedici panelini</u>  əldə etməyi hədəfləyən çox platformalı bir vasitədir.</p>
+         <i>Tələblər:</i>
+        <ul>
+          <li> Python 2.7</li>
+          <li> mechanize</li>
+          <li> PySocks</li>
+          <li>beautifulsoup4</li>
+          <li>html5lib</li>
+          <li>Nmap (--nmap)</li>
+          <li>TOR (--tor)</li>
+        </ul>
+       <br>
+        <h1>Linuxa yükkləməkI</h1>
+        <ol>
+         <h3>
+          <li> git clone  <u>https://github.com/fnk0c/cangibrina.git</u> </li>
+         <li>	cd cangibrina</li>
+         <li>pip install -r requirements.txt</li> </h3>
+        </ol>
+<br>
+    
+          
+      
+        <h1>İstifadə Qaydası</h1>
+        <strong>cangibrina.py [-h] [-u U] [-w W] [-t T] [-v] [--ext EXT] [--user-agent] [--sub-domain] [--tor] [--search] [--dork DORK] [--nmap [NMAP]]
+        </strong>
+      
+        <p> <img class="kali" src="kali.png" alt="help"></p> 
+        <p>
+        <ul>
+<li> <strong>-h, --help: </strong>  Cangibrina toolunda istifadə edə biləcəyiniz komutlar ve açılışını göstərir</li>
+<li><strong>-u, U: </strong> Hədəf sayti: məs: https://www.aztu.edu.az/az</li>
+<li><strong> -w, W: </strong>Wordlist qoymaq üçün istifadə olunur, /usr/share/wordlists den istədiyinizi qoya bilərsiniz (default:wl_medium) </li>
+<li><strong>-t, T:</strong>:Toolun nə qədər sürətdə taramasını göstərir (default 5).</li>
+<li><strong>-v:</strong> : Verboz edir yəni biz bunu yazanda kodun necə işlədiyini görə bilərik.</li>
+<p> <img class="kali" src="kali2.png" alt="help"></p> 
+<li><strong>--ext, EXT:</strong> :  Yalnızca belirli dosya uzantılarına sahip olan dosyaların taranmasını sağlar.Məsələn, Cangibrina'yı yalnızca PHP (.php) və JavaScript (.js) tarayacaq</li>
+<li><strong>--user-agent:</strong>  User agent, web tarayıcılarının veya diğer HTTP istemcilerinin sunuculara kendilerini tanıtmak için kullandığı bir HTTP başlığıdır. User agent, istemcinin türünü, sürümünü ve diğer ilgili bilgileri sunucuya ileterek sunucunun yanıtı buna göre şekillendirmesine olanak sağlar.</li>
+<li><strong>--sub-domain:</strong> Cangibrina toolunda directory yerinə alt domainləri tarıyır </li>
+<li><strong>--tor:</strong>: Cangibrinada belə bir funksiya yoxdu deyəsən,ama tor dark webdi, yəqin dark üeb taramasi edirç bilmirəm :/</li>
+<li><strong>--search:</strong> Taradığımız web saytında axtarış edirş Məs: <u>--search admin</u> bu yalnizda sonu adminlə bitənləri göstərəcək.  </li>
+<li><strong>--dork, DORK:</strong> "Cangibrina --dork" seçeneği, Cangibrina aracını istifadə edərək hədəf veb saytında zəif nöqtələri və ya gizli məlumatları axtarmaq üçün müəyyən bir axtarış ifadəsindən (dork) istifadə etmək üçündür.Məs <u>inurl:admin</u>  domeni URL-də "admin" sözü olan səhifələri tapmaq üçün vebsaytlarda axtarış aparır.</li>
+<li>Son olaraq, device seçimi, MacChanger toolunun istifadə ediləcək şəbəkə qurğusunun adını təyin edir.</li>
+
